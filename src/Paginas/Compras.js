@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     margin: 20,
-  },
+    },
 botao5:{
   marginTop: 20,
   backgroundColor: '#8A05BE',
