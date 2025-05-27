@@ -40,7 +40,8 @@ titulo:{
 fontSize:26,
 marginVertical:20,
 fontWeight:'bold',
-    textAlign:'center'
+    textAlign:'center',
+    backgroundColor:'black'
 
 
 }

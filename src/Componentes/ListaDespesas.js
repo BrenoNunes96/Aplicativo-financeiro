@@ -91,8 +91,9 @@ export default function Despesas() {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#f5f0fa',
     alignItems: 'center',
+    backgroundColor:'black'
+
   },
   containerUsuario: {
     width: '100%',

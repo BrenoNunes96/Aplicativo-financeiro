@@ -1,7 +1,9 @@
 import React from "react";
-import { View, StyleSheet, TouchableOpacity } from "react-native";
+import { View, StyleSheet, TouchableOpacity,Text } from "react-native";
 import { useNavigation } from '@react-navigation/native';
-import Feather from 'react-native-vector-icons/Feather';
+import { Feather } from '@expo/vector-icons';
+
+
 
 export default function Home() {
   const navigation = useNavigation();
@@ -15,7 +17,8 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-   
+
+    <View><Text style={styles.Text}>ZAYON</Text></View>
       <View style={styles.row}>
      
 
@@ -40,7 +43,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     padding: 16,
   },
+Text:{
+color:'white',
+fontSize:26,
+marginBottom:100,
+marginRight:50,
 
+
+
+},
   row: {
     flexDirection: 'row',
     gap: 20, // se não funcionar, use marginRight no primeiro botão
