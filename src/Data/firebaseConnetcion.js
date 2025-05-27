@@ -1,26 +1,22 @@
-// firebaseConfig.js
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getDatabase } from 'firebase/database';
-import { getStorage } from 'firebase/storage';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// ✅ Suas credenciais do Firebase
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAC5cDTswupquT8iSJFCw4ULyBRbIwGbyI",
-  authDomain: "projetctfinalie.firebaseapp.com",
-  projectId: "projetctfinalie",
-  storageBucket: "projetctfinalie.firebasestorage.app",
-  messagingSenderId: "659082406552",
-  appId: "1:659082406552:web:41ca73f7a348a6addcbeed",
-  measurementId: "G-NK1GM3X21Q"
+  apiKey: "AIzaSyCQIKqnPlpdz4lusuPEzoLnGJF0LpnfxNw",
+  authDomain: "hpproject-65d6d.firebaseapp.com",
+  databaseURL: "https://hpproject-65d6d-default-rtdb.firebaseio.com",
+  projectId: "hpproject-65d6d",
+  storageBucket: "hpproject-65d6d.firebasestorage.app",
+  messagingSenderId: "192455258021",
+  appId: "1:192455258021:web:b0aee42a3923cacc27024c",
+  measurementId: "G-RKYEGXSLT9"
 };
-// ✅ Inicializa o app Firebase
-const firebaseApp = initializeApp(firebaseConfig);
 
-// ✅ Inicializa os serviços
-const auth = getAuth(firebaseApp);
-const db = getFirestore(firebaseApp);
-const rtdb = getDatabase(firebaseApp);
-const storage = getStorage(firebaseApp);
-export { firebaseApp, auth, db, rtdb as realtimeDb, storage };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
